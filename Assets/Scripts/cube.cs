@@ -7,6 +7,7 @@ public class cube : MonoBehaviour
     public float x;
     public float y;
     public float z;
+    public GameObject box;
     void Start()
     {
         gameObject.GetComponent<Renderer>().enabled = false;
@@ -26,5 +27,4 @@ public class cube : MonoBehaviour
             estActif = false;
         }
     }
-    //Vérifier si deux cube sont a coté en ajoutant ou enlever 0.5 au axe x et y des gameObject pour voir si des cubes sont actifs a ces coordonnées.
 }
