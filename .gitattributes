@@ -1,4 +1,8 @@
 *.cs linguist-detectable=true
 *.shader linguist-detectable=true
+*.nb linguist-detectable=false
+*.m linguist-detectable=false
+*.wl linguist-detectable=false
 *.nb linguist-vendored
 *.m linguist-vendored
+*.wl linguist-vendored
