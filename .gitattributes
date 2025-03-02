@@ -4,7 +4,9 @@
 *.nb linguist-detectable=false
 *.m linguist-detectable=false
 *.wl linguist-detectable=false
+*.wlt linguist-detectable=false
 *.meta linguist-vendored
 *.nb linguist-vendored
 *.m linguist-vendored
 *.wl linguist-vendored
+*.wlt linguist-vendored
