@@ -9,6 +9,7 @@ public class genererGameObject : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("création des cubes...");
         for (int i = 0; i < 17; i = i + 1)
         {
             GameObject myObject = Instantiate(box);
@@ -23,6 +24,7 @@ public class genererGameObject : MonoBehaviour
             z = z + 0.5f;
             x = 0;
         }
+        Debug.Log("création des cubes fini !");
         
     
     
