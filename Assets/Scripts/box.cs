@@ -11,11 +11,11 @@ public class box : MonoBehaviour
     public GameObject floor;
     void Start()
     {
-        wallNord.GetComponent<Renderer>().enabled = false;
-        wallOuest.GetComponent<Renderer>().enabled = false;
-        wallEst.GetComponent<Renderer>().enabled = false;
-        wallSud.GetComponent<Renderer>().enabled = false;
-        floor.GetComponent<Renderer>().enabled = false;
+        wallNord.gameObject.SetActive(false);
+        wallOuest.gameObject.SetActive(false);
+        wallEst.gameObject.SetActive(false);
+        wallSud.gameObject.SetActive(false);
+        floor.gameObject.SetActive(false);
         estActif = false;
     }
 
@@ -23,20 +23,20 @@ public class box : MonoBehaviour
     {
         if (!estActif)
         {
-            wallNord.GetComponent<Renderer>().enabled = true;
-            wallOuest.GetComponent<Renderer>().enabled = true;
-            wallEst.GetComponent<Renderer>().enabled = true;
-            wallSud.GetComponent<Renderer>().enabled = true;
-            floor.GetComponent<Renderer>().enabled = true;
+            wallNord.gameObject.SetActive(true);
+            wallOuest.gameObject.SetActive(true);
+            wallEst.gameObject.SetActive(true);
+            wallSud.gameObject.SetActive(true);
+            floor.gameObject.SetActive(true);
             estActif = true;
         }
         else if (estActif)
         {
-            wallNord.GetComponent<Renderer>().enabled = false;
-            wallOuest.GetComponent<Renderer>().enabled = false;
-            wallEst.GetComponent<Renderer>().enabled = false;
-            wallSud.GetComponent<Renderer>().enabled = false;
-            floor.GetComponent<Renderer>().enabled = false;
+            wallNord.gameObject.SetActive(false);
+            wallOuest.gameObject.SetActive(false);
+            wallEst.gameObject.SetActive(false);
+            wallSud.gameObject.SetActive(false);
+            floor.gameObject.SetActive(false);
             estActif = false;
         }
 

@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 93604472}
   - component: {fileID: 93604471}
   - component: {fileID: 93604474}
+  - component: {fileID: 93604475}
   m_Layer: 0
   m_Name: Wall Est
   m_TagString: Untagged
@@ -148,7 +149,7 @@ Transform:
   m_GameObject: {fileID: 93604469}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -250,11 +251,26 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &93604475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93604469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26dbaff37aa657f45a00040e34ce6830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 0
+  y: 0
+  z: -0.12
 --- !u!1 &129538643
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,6 +740,7 @@ GameObject:
   - component: {fileID: 927320931}
   - component: {fileID: 927320930}
   - component: {fileID: 927320933}
+  - component: {fileID: 927320934}
   m_Layer: 0
   m_Name: Wall Ouest
   m_TagString: Untagged
@@ -740,7 +757,7 @@ Transform:
   m_GameObject: {fileID: 927320928}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -842,11 +859,26 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &927320934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927320928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26dbaff37aa657f45a00040e34ce6830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 0
+  y: 0
+  z: 0.12
 --- !u!1 &1057647605
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,6 +892,7 @@ GameObject:
   - component: {fileID: 1057647608}
   - component: {fileID: 1057647607}
   - component: {fileID: 1057647610}
+  - component: {fileID: 1057647611}
   m_Layer: 0
   m_Name: Wall Sud
   m_TagString: Untagged
@@ -876,7 +909,7 @@ Transform:
   m_GameObject: {fileID: 1057647605}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.5, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -978,11 +1011,26 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1057647611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057647605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26dbaff37aa657f45a00040e34ce6830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: -0.12
+  y: 0
+  z: 0
 --- !u!1 &1881150803
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,6 +1165,7 @@ GameObject:
   - component: {fileID: 1953281500}
   - component: {fileID: 1953281499}
   - component: {fileID: 1953281502}
+  - component: {fileID: 1953281503}
   m_Layer: 0
   m_Name: Wall Nord
   m_TagString: Untagged
@@ -1133,7 +1182,7 @@ Transform:
   m_GameObject: {fileID: 1953281497}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.5, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1235,11 +1284,26 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1953281503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953281497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26dbaff37aa657f45a00040e34ce6830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 0.12
+  y: 0
+  z: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
